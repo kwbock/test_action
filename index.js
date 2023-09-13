@@ -5,7 +5,7 @@ try {
   // `who-to-greet` input defined in action metadata file
   const taskArns = ["arn:123"];
   console.log("taskArns", taskArns);
-  core.setOutput("time", taskArns);
+  core.setOutput("task-arn", taskArns);
 } catch (error) {
   core.setFailed(error.message);
 }
