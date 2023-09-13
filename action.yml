@@ -1,0 +1,13 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  who-to-greet:
+    description: 'Who to greet'
+    required: false
+    default: 'World'
+outputs:
+  task-arn:
+    description: 'ARN of the task'
+runs:
+  using: 'node16'
+  main: 'index.js'
